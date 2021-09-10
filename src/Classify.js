@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Classify.css";
-
+console.log("Post Api:", process.env.REACT_APP_SVM);
 /*Component to post blog and list the posted blog posts*/
 export function ClassifyPost() {
   const [inputNews, setInputNews] = useState("");
@@ -12,8 +12,7 @@ export function ClassifyPost() {
     if (isNaN(inputNewsValue)) {
       try {
         axios
-          .post(process.env.REACT_APP_SVM, {
-            //  http://127.0.0.1:5000/api/newsclassifier"
+          .post("https://uescnews-backend.herokuapp.com/api/v1/logistic", {
             postNewsDetail: inputNews,
           })
           .then((res) => res.data)

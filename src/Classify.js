@@ -12,7 +12,7 @@ export function ClassifyPost() {
     if (isNaN(inputNewsValue)) {
       try {
         axios
-          .post("https://uescnews-backend.herokuapp.com/api/v1/logistic", {
+          .post("https://uescnews-backend.herokuapp.com/api/newsclassifier", {
             postNewsDetail: inputNews,
           })
           .then((res) => res.data)

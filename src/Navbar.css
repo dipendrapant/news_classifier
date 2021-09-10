@@ -1,0 +1,15 @@
+.blogSiteName {
+  color: blue;
+  text-align: center;
+  padding: 0.1rem;
+  border-bottom: 2px solid black;
+}
+
+.blogSiteName ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.blogSiteName ul li {
+  margin-left: 2rem;
+}

@@ -1,0 +1,12 @@
+.aboutTab {
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  box-shadow: 0 4px 8px 0 rgb(33 149 43 / 20%);
+  transition: 0.3s;
+}
+
+.aboutTab h3 {
+  border-bottom: 1px solid black;
+}

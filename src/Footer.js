@@ -3,7 +3,7 @@ import "./Footer.css";
 export function Footer() {
   return (
     <div className="siteFooter">
-      <p>Powered by DP </p>
+      <p>Powered by UESC </p>
     </div>
   );
 }
